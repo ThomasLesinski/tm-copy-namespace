@@ -1,0 +1,1 @@
+# tm-copy-namespace
