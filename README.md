@@ -1,1 +1,1 @@
-# tm-copy-namespace
+# Tampermonkey 'Copy Namespace' Script
