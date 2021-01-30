@@ -24,7 +24,6 @@
     const fileNamespace = getNamespace();
     let additionalClass = '';
 
-
     if (fileNamespace === 'hide') {
       clearInterval(addCopyNamespaceBtnInterval);
       return;
@@ -39,12 +38,12 @@
 
     if (!goToFileBtn) {
       goToFileBtn = document.querySelector('.file-navigation .btn.mr-2.d-none.d-md-block');
-
-      const GoToFileBtnParentEl = goToFileBtn.parentNode;
-
-      document.querySelector('body').append(copyNamespaceInput);
-      GoToFileBtnParentEl.insertBefore(copyNamespaceBtn, goToFileBtn);
     }
+
+    const GoToFileBtnParentEl = goToFileBtn.parentNode;
+
+    document.querySelector('body').append(copyNamespaceInput);
+    GoToFileBtnParentEl.insertBefore(copyNamespaceBtn, goToFileBtn);
 
     function createCopyNamespaceInput(fileNamespace) {
       const copyNamespaceInput = document.createElement('input');
@@ -102,8 +101,8 @@
           });
 
           if (namespaceArr.length > 0) {
-            namespaceArr.push(finalPathSegment);
-            namespaceString = 'use ' + namespaceArr.join('/') + ';';
+            namespaceArr.push(finalPathSegment.replace('.php', ''));
+            namespaceString = 'use Shopware\\' + namespaceArr.join('\\') + ';';
           }
         } else {
           return 'hide';
