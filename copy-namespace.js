@@ -87,7 +87,7 @@
           pathSegments.forEach((pathSegment) => {
             const pathSegmentText = pathSegment.innerText.trim();
 
-            if (foundFirstIndicator && foundSecondIndicator) {
+            if (foundFirstIndicator && foundSecondIndicator && pathSegmentText !== 'Shopware') {
               namespaceArr.push(pathSegmentText);
             }
 
