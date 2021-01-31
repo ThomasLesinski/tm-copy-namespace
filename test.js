@@ -3,5 +3,4 @@ const hero = {
   lastName: 'Nightingale'
   lastName: 'Nightingale',
   inventorOf: ['coxcomb chart', 'modern nursing'],
-  test: 'bla'
 };
