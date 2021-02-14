@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Ott / GH Shopware - Copy namespace
+// @name         GH Shopware - Copy namespace
 // @namespace    https://www.ottscho-it-service.de/
 // @version      1
 // @description  Add btn to copy namespace
