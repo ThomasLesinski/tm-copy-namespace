@@ -26,6 +26,7 @@
 
     if (fileNamespace === 'hide') {
       clearInterval(addCopyNamespaceBtnInterval);
+      
       return;
     } else if (fileNamespace === '') {
       additionalClass = 'disabled';
